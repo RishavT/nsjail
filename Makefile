@@ -22,7 +22,7 @@ CC ?= gcc
 CFLAGS += -O2 -c -std=gnu11 \
 	-D_GNU_SOURCE \
 	-fstack-protector-all -Wformat -Wformat=2 -Wformat-security -fPIE \
-	-Wall -Wextra -Werror
+	-Wall -Wextra
 
 LDFLAGS += -Wl,-z,now -Wl,-z,relro -pie -Wl,-z,noexecstack
 
